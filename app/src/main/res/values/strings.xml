@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Repo4U</string>
-    <string name="kotlin_json_parser">Kotlin JSON Parser</string>
+    <string name="kotlin_json_parser">Kotlin</string>
     <string name="search">Search</string>
 </resources>
