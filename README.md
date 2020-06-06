@@ -1,4 +1,4 @@
-# Repp Search App
+# Repo Search App
 
 A simple kotlin based android app for searching GitHub repositories on phone by providing search terms like language name, library, framework etc., It will give you a list of all repositories given your search term.
 
@@ -8,9 +8,9 @@ And you can also search for particular user by using GitHub username and can see
 
 # Screenshot
 
-![Image1](https://ibb.co/dP7Qwm7)
+![Image1](https://github.com/OddExtension5/repo-search-app/blob/master/images/20200606_194119.jpg)
 
-![image2](https://ibb.co/XtmPSSw)
+![image2](https://github.com/OddExtension5/repo-search-app/blob/master/images/20200606_194221.jpg)
 
 # Getting Started
 
@@ -34,7 +34,7 @@ And you need either a AVD or a physical android device of API 21 and above to ru
 
 # External Library Used
 
-1. ``Retorfit``: For working with my GitHUB API. It turns your HTTP API into a Kotlin Interface. For further reading [click here](https://square.github.io/retrofit/)
+1. ``Retrofit``: For working with my GitHUB API. It turns your HTTP API into a Kotlin Interface. For further reading [click here](https://square.github.io/retrofit/)
 
 2. ``Picasso``: It mainly used for fetching users github avatar and displaying it on my app. A picasso is a powerful image downloading and caching library for Android. For documentation [click here](https://square.github.io/picasso/)
 
