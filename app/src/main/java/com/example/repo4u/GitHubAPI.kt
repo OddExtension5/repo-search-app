@@ -1,11 +1,12 @@
 package com.example.repo4u
 
-import retrofit2.http.GET
-import retrofit2.http.Query
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.http.GET
+import retrofit2.http.Path
+import retrofit2.http.Query
 
 /**
  * Created by OddExtension5 on 5/27/20.
@@ -13,7 +14,10 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 interface GitHubService {
     @GET("search/repositories?")
-    fun searchRepos(@Query("q") searchTerm: String) : Call<GitHubSearchResult>
+    fun searchRepos(@Query("q") searchTerm: String): Call<GitHubSearchResult>
+
+    @GET("users/{user}/repos")
+    fun userRepos(@Path("user") username: String): Call<List<Repo>>
 }
 
 class GitHubSearchResult(val items: List<Repo>)
@@ -34,6 +38,12 @@ class GitHubRetriever {
         }
         val call = service.searchRepos(searchT)
         call.enqueue(callback)
+    }
+
+    fun userRepos(callback: Callback<List<Repo>>, username: String) {
+        val call = service.userRepos(username)
+        call.enqueue(callback)
+
     }
 
 }

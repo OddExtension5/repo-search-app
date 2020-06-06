@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Repo4U</string>
-    <string name="kotlin_json_parser">Kotlin</string>
+    <string name="kotlin_json_parser">Search For Repos</string>
     <string name="search">Search</string>
+    <string name="view_user_s_repo">View User\'s Repo</string>
+    <string name="button">Button</string>
+    <string name="textview">TextView</string>
+
 </resources>
