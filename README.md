@@ -26,7 +26,7 @@ And you need either a AVD or a physical android device of API 21 and above to ru
 
 ## Running
 
-1. Clone this repo if you have git installed by using ``git clone <clone or download url>'
+1. Clone this repo if you have git installed by using ``git clone <clone or download url>``
 2. Open it in Adroid Studio (4.0)
 3. Sync in all the gradle dependencies
 4. Then, build and run the project
